@@ -5,7 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
-
+let greeting = "Hi"
+let farewell = 'Goodbye'
 
 
 //////////////////PROBLEM 2////////////////////
@@ -15,15 +16,16 @@
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 //Code here
-
-
+let hello = "Hello"
+let userName = "Ralph"
+let salutation = hello + " " + userName
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
-
+let seven = 7
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +34,7 @@
 // This datatype should be a number
 
 //Code here
-
+let money = 200000
 
 
 //////////////////PROBLEM 5////////////////////
@@ -41,7 +43,7 @@
 
 //Code here
 
-
+let awesome = true
 
 //////////////////PROBLEM 6////////////////////
 
@@ -55,7 +57,7 @@ let myCar = "Jeep";
 
 //Code here
 
-
+myCar = null
 
 //////////////////PROBLEM 7////////////////////
 
@@ -64,7 +66,23 @@ let myCar = "Jeep";
 
 //Code here
 
-
+let users = [ {
+  name: 'Max',
+  age: 22
+},
+{
+  name: 'Vince',
+  age: 40
+},
+{
+  name: 'Roy',
+  age: 19
+},
+{
+  name: 'Angela',
+  age: 21
+}
+]
 
 //////////////////PROBLEM 8////////////////////
 
@@ -75,7 +93,17 @@ let myCar = "Jeep";
 
 //Code here
 
-
+let family = {
+  Ralph:{
+    hobbies: {}
+  },
+  Max:{
+    hobbies: {}
+  },
+  George:{
+    hobbies: {}
+  }
+}
 
 //////////////////PROBLEM 9////////////////////
 
@@ -84,7 +112,7 @@ let myCar = "Jeep";
 
 //Code here
 
-
+let gameScores = [[1,2], [2,3], [3, 4]]
 
 //////////////////PROBLEM 10////////////////////
 
@@ -92,7 +120,19 @@ let myCar = "Jeep";
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 //Code here
-
+let people = [{
+  name: 'George',
+  gender: 'male',
+  height: 182
+}, {
+  name: 'Angela',
+  gender: 'female',
+  height: 177
+}, {
+  name: 'Muggsy',
+  gender: 'male',
+  height: 160
+}]
 
 
 //////////////////PROBLEM 11////////////////////
@@ -102,7 +142,11 @@ let myCar = "Jeep";
 
 //Code here
 
-
+var cowboy = {
+  name: 'Sawyer',
+  state: 'Mississippi',
+  favoriteCountrySong: 'some song'
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -132,14 +176,14 @@ function launch() {
 
 //Code here
 
-
+let dataTypes = [42, 'meaning', true, [1,2,3,4,5], spaceship, launch]
 
 //////////////////PROBLEM 13////////////////////
 
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2
 };
   
 
@@ -149,13 +193,15 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-
+let number1 = 10
+let number2 = 20
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply() {
-  return // Code here
-};
+function multiply(number1, number2) {
+  let multiplied = number1 * number2
+  return number1 * number2
+}
 
 
 
@@ -170,7 +216,7 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`
 };
 
 

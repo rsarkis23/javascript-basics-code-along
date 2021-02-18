@@ -198,8 +198,7 @@ let number2 = 20
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
-function multiply(number1, number2) {
-  let multiplied = number1 * number2
+function multiply() {
   return number1 * number2
 }
 
@@ -233,7 +232,7 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  theBoss = name
 };
 
 
@@ -253,7 +252,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return userObj.name
 };
 
 
@@ -275,7 +274,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2]
 }
 
 
@@ -286,7 +285,9 @@ function getWeekDay(calendar){
 
 // Code here
 
-
+function fn(param){
+  return param
+}
 
 //////////////////PROBLEM 20////////////////////
 
@@ -301,7 +302,9 @@ let lastName = "Jones";
 
 // Code here
 
-
+function createName(){
+  return firstName + " " + lastName
+}
 
 //////////////////PROBLEM 21////////////////////
 
@@ -309,14 +312,18 @@ let lastName = "Jones";
 
 // Code here
 
-
+function showMeSeven(){
+  return 7
+}
 
 //////////////////PROBLEM 22////////////////////
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-
+function multiplier(num1, num2){
+  return num1 * num2
+}
 
 
 //////////////////PROBLEM 23////////////////////
@@ -326,7 +333,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-
+function sayHello(greeting, name){
+  return greeting + " " + name
+}
 
 
 //////////////////PROBLEM 24////////////////////
@@ -337,7 +346,13 @@ let lastName = "Jones";
   // the second property should be duration with the value of the second parameter
 
 // Code here
-
+function makeExercise(exerciseName, duration){
+  let obj = {
+    exerciseName,
+    duration
+  }
+  return obj
+}
 
 
 //////////////////PROBLEM 25////////////////////
@@ -352,7 +367,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if (age >= 21){
+    return 'old enough'
+  }else{
+    return 'not yet'
+  }
 };
 
 

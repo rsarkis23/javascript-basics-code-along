@@ -388,7 +388,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if (workEthic === 'great'){
+    return 'success at DevMountain'
+  }else{
+    return 'failure at DevMountain'
+  }
 };
 
 
@@ -405,7 +409,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if (cookieType === 'raisin'){
+    return 'throw in trash'
+  }else{
+    return 'eat'
+  }
 };
 
 
@@ -423,7 +431,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if (myTeamScore > yourTeamScore){
+    return 'we are the champions'
+  }else{
+    return ':('
+  }
 };
 
 
@@ -444,7 +456,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if (age >= 3 && age <= 7){
+    return 'tricycle'
+  }else if(age >= 8 && age <= 15){
+    return 'bicycle'
+  }else if(age > 15){
+    return 'car'
+  }
 };
 
 
@@ -465,7 +483,11 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  if (temp === 'hot' && cash){
+    return 'Get Ice Cream!'
+  }else{
+    return 'Save up for another day.'
+  }
 };
 
 
@@ -485,7 +507,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if (!chores || !work){
+    return 'free time!'
+  }
 };
 
 
@@ -507,7 +531,9 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if (currentSpeed === 'fast' && !brakes){
+    crash = true
+  }
 };
 
 
@@ -531,7 +557,13 @@ user = {
 
 // Code here
 
-
+function makePurchase(priceOfItem){
+  if (priceOfItem <= user.total){
+    user.total -= priceOfItem
+  }else{
+    return 'not enough funds'
+  }
+}
 
 //////////////////PROBLEM 34////////////////////
 
@@ -561,3 +593,13 @@ function sleep(){
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
 // Code here
+
+function decisionMaker(hungry, tired){
+  if (hungry && !tired){
+    return eat()
+  }else if(!hungry && tired){
+    return sleep()
+  }else{
+    return 'undecided'
+  }
+}
